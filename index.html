@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WLif Digitalwatch</title>
+<body>
+
+   <div class="datetime">
+		<div class="dd">
+			<span id="dday">AM</span>
+		</div>
+        <div class="time">
+            <span id="hour"></span>:
+            <span id="minutes">00</span>:
+            <span id="s">00</span>
+            <span id="period">AM</span>
+        </div>
+
+    
+
+	    <div class="date">
+	    	  <span id="fuldate"></span>
+	    </div>
+
+  	</div>
+   
+         
+        
+
+
+<script src="digitalwatch.js"></script> 
+<style>
+	
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgb(240,128,128);
+
+
+
+ 
+}
+.datetime{
+  color: #fff;
+  background:  rgb(219,112,147)	;
+
+  font-family: "Segoe UI", sans-serif;
+  width: 340px;
+  padding: 15px 10px;
+  border: 3px solid #2E94E3;
+  border-radius: 5px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+  transition: 0.5s;
+  transition-property: background, box-shadow;
+}
+
+.datetime:hover{
+  background: #2E94E3;
+  box-shadow: 0 0 30px #2E94E3;
+}
+
+.date{
+  font-size: 20px;
+  font-weight: 600;
+  text-align: right;
+  letter-spacing: 3px;
+}
+
+.time{
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.time span:last-child{
+  background: #2E94E3;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding: 0 5px;
+  border-radius: 3px;
+}
+
+</style>
+    
+    
+  
+</body>
+</html>
+
